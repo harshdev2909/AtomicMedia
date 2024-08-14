@@ -683,8 +683,8 @@ body {
   opacity: 0;
   transform: translateY(calc(-50% + 20px));
   transition: var(--transition-2);
-}
 
+}
 .project-card .card-tag {
   color: var(--raisin-black-1);
   font-size: var(--fs-9);
