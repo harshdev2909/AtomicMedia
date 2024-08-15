@@ -8,7 +8,7 @@ body {
 }
 
 .gallery-container {
-    max-width: 100%;
+    max-width: 1200px;
     width: 100%;
     margin: 50px auto;
     padding: 0 20px;
@@ -23,7 +23,7 @@ h1 {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 20fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 20fr));
     grid-gap: 30px;
 }
 
