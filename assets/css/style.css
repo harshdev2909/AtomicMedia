@@ -1,3 +1,12 @@
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
@@ -459,10 +468,13 @@ body {
   display: grid;
   gap: 70px;
 }
-
+.hero-title{
+  animation: fadeInOut 3s infinite;
+}
 .hero-text {
   font-size: var(--fs-7);
   margin-block: 30px 35px;
+  animation: fadeInOut 3s infinite;
 }
 
 .hero-content :is(.wrapper, .hero-btn) {
@@ -1216,6 +1228,8 @@ body {
     font-weight: var(--fw-500);
   }
 
+
+
   .navbar-link:is(:hover, :focus) { color: var(--raisin-black-1); }
 
   .navbar-link::before {
@@ -1228,7 +1242,11 @@ body {
     border-radius: 5px;
     background-color: var(--majorelle-blue);
     transition: var(--transition-1);
+    
   }
+  .navbar.hidden {
+    transform: translateY(-100%); /* Hide the navbar */
+}
 
   .navbar-link:is(:hover, :focus)::before { width: 100%; }
 
@@ -1419,7 +1437,10 @@ body {
     margin-block-start: 50px;
   }
 
-  .hero-text { margin-block: 40px 45px; }
+  .hero-text {
+   margin-block: 40px 45px;
+   animation: fadeInOut 3s infinite;
+  }
 
   .hero .wrapper { margin-block-end: auto; }
 
