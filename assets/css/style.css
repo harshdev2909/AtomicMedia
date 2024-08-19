@@ -468,13 +468,10 @@ body {
   display: grid;
   gap: 70px;
 }
-.hero-title{
-  animation: fadeInOut 3s infinite;
-}
+
 .hero-text {
   font-size: var(--fs-7);
   margin-block: 30px 35px;
-  animation: fadeInOut 3s infinite;
 }
 
 .hero-content :is(.wrapper, .hero-btn) {
@@ -1439,7 +1436,7 @@ body {
 
   .hero-text {
    margin-block: 40px 45px;
-   animation: fadeInOut 3s infinite;
+   
   }
 
   .hero .wrapper { margin-block-end: auto; }
